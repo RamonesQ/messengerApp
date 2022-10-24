@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F8933E28FB06D4D5E845A35 /* Pods_messengerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C590BE61EB31495F22D956D7 /* Pods_messengerApp.framework */; };
 		D2240F442907212500796B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F432907212500796B6D /* AppDelegate.swift */; };
 		D2240F462907212500796B6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F452907212500796B6D /* SceneDelegate.swift */; };
-		D2240F482907212500796B6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F472907212500796B6D /* ViewController.swift */; };
-		D2240F4B2907212500796B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2240F492907212500796B6D /* Main.storyboard */; };
 		D2240F4D2907212700796B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2240F4C2907212700796B6D /* Assets.xcassets */; };
 		D2240F502907212700796B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2240F4E2907212700796B6D /* LaunchScreen.storyboard */; };
+		D2240F72290721F700796B6D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F67290721F600796B6D /* LoginView.swift */; };
+		D2240F73290721F700796B6D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F68290721F600796B6D /* RegisterViewController.swift */; };
+		D2240F75290721F700796B6D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F6B290721F600796B6D /* RegisterView.swift */; };
+		D2240F76290721F700796B6D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F6D290721F600796B6D /* Alert.swift */; };
+		D2240F77290721F700796B6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F70290721F600796B6D /* LoginViewController.swift */; };
+		D2240F7C290729D600796B6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2240F7B290729D600796B6D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		649D9A98D20941BBFBCB1BE6 /* Pods-messengerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messengerApp.debug.xcconfig"; path = "Target Support Files/Pods-messengerApp/Pods-messengerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		918844335662E47905D122E1 /* Pods-messengerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messengerApp.release.xcconfig"; path = "Target Support Files/Pods-messengerApp/Pods-messengerApp.release.xcconfig"; sourceTree = "<group>"; };
+		C590BE61EB31495F22D956D7 /* Pods_messengerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_messengerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2240F402907212500796B6D /* messengerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messengerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2240F432907212500796B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2240F452907212500796B6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2240F472907212500796B6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2240F4A2907212500796B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2240F4C2907212700796B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2240F4F2907212700796B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2240F512907212700796B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2240F67290721F600796B6D /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D2240F68290721F600796B6D /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D2240F6B290721F600796B6D /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D2240F6D290721F600796B6D /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		D2240F70290721F600796B6D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D2240F7B290729D600796B6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8933E28FB06D4D5E845A35 /* Pods_messengerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5174DD4E1B58C365520EB0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				649D9A98D20941BBFBCB1BE6 /* Pods-messengerApp.debug.xcconfig */,
+				918844335662E47905D122E1 /* Pods-messengerApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BDF6FFEA472580F83987BED5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C590BE61EB31495F22D956D7 /* Pods_messengerApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2240F372907212500796B6D = {
 			isa = PBXGroup;
 			children = (
 				D2240F422907212500796B6D /* messengerApp */,
 				D2240F412907212500796B6D /* Products */,
+				A5174DD4E1B58C365520EB0F /* Pods */,
+				BDF6FFEA472580F83987BED5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +88,76 @@
 		D2240F422907212500796B6D /* messengerApp */ = {
 			isa = PBXGroup;
 			children = (
+				D2240F7B290729D600796B6D /* GoogleService-Info.plist */,
+				D2240F6C290721F600796B6D /* Alert */,
+				D2240F6E290721F600796B6D /* Login */,
+				D2240F64290721F600796B6D /* Register */,
 				D2240F432907212500796B6D /* AppDelegate.swift */,
 				D2240F452907212500796B6D /* SceneDelegate.swift */,
-				D2240F472907212500796B6D /* ViewController.swift */,
-				D2240F492907212500796B6D /* Main.storyboard */,
 				D2240F4C2907212700796B6D /* Assets.xcassets */,
 				D2240F4E2907212700796B6D /* LaunchScreen.storyboard */,
 				D2240F512907212700796B6D /* Info.plist */,
 			);
 			path = messengerApp;
+			sourceTree = "<group>";
+		};
+		D2240F64290721F600796B6D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D2240F65290721F600796B6D /* Controller */,
+				D2240F69290721F600796B6D /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D2240F65290721F600796B6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2240F68290721F600796B6D /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2240F69290721F600796B6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2240F6B290721F600796B6D /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2240F6C290721F600796B6D /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				D2240F6D290721F600796B6D /* Alert.swift */,
+			);
+			name = Alert;
+			path = ../../../loginScreen/LoginScreenViewCode/LoginScreenViewCode/Alert;
+			sourceTree = "<group>";
+		};
+		D2240F6E290721F600796B6D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D2240F78290724CE00796B6D /* View */,
+				D2240F6F290721F600796B6D /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D2240F6F290721F600796B6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2240F70290721F600796B6D /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2240F78290724CE00796B6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2240F67290721F600796B6D /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2240F542907212700796B6D /* Build configuration list for PBXNativeTarget "messengerApp" */;
 			buildPhases = (
+				4720192FC70AA5C164829DB1 /* [CP] Check Pods Manifest.lock */,
 				D2240F3C2907212500796B6D /* Sources */,
 				D2240F3D2907212500796B6D /* Frameworks */,
 				D2240F3E2907212500796B6D /* Resources */,
+				25C03A1095E983619421030F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,20 +221,66 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2240F502907212700796B6D /* LaunchScreen.storyboard in Resources */,
+				D2240F7C290729D600796B6D /* GoogleService-Info.plist in Resources */,
 				D2240F4D2907212700796B6D /* Assets.xcassets in Resources */,
-				D2240F4B2907212500796B6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25C03A1095E983619421030F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-messengerApp/Pods-messengerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-messengerApp/Pods-messengerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-messengerApp/Pods-messengerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4720192FC70AA5C164829DB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-messengerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2240F3C2907212500796B6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2240F482907212500796B6D /* ViewController.swift in Sources */,
+				D2240F76290721F700796B6D /* Alert.swift in Sources */,
 				D2240F442907212500796B6D /* AppDelegate.swift in Sources */,
+				D2240F73290721F700796B6D /* RegisterViewController.swift in Sources */,
+				D2240F75290721F700796B6D /* RegisterView.swift in Sources */,
+				D2240F72290721F700796B6D /* LoginView.swift in Sources */,
+				D2240F77290721F700796B6D /* LoginViewController.swift in Sources */,
 				D2240F462907212500796B6D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +288,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2240F492907212500796B6D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2240F4A2907212500796B6D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2240F4E2907212700796B6D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +415,7 @@
 		};
 		D2240F552907212700796B6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649D9A98D20941BBFBCB1BE6 /* Pods-messengerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +426,6 @@
 				INFOPLIST_FILE = messengerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +443,7 @@
 		};
 		D2240F562907212700796B6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 918844335662E47905D122E1 /* Pods-messengerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +454,6 @@
 				INFOPLIST_FILE = messengerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
