@@ -7,12 +7,14 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class RegisterViewController: UIViewController {
 	
 	var registerView: RegisterView?
 	
 	var auth: Auth?
+	var firestore: Firestore?
 	var alert: Alert?
 	
 	override func loadView() {
@@ -26,6 +28,7 @@ class RegisterViewController: UIViewController {
 		registerView?.delegate(delegate: self)
 		registerView?.configTextFieldDelegate(delegate: self)
 		auth = Auth.auth()
+		firestore = Firestore.firestore()
 		alert = Alert(controller: self)
 	}
 }
@@ -49,6 +52,7 @@ extension RegisterViewController: RegisterViewProtocol{
 	
 	func actionRegisterButton() {
 		
+		guard let name = registerView?.nameTextField.text else {return}
 		guard let email = registerView?.emailTextField.text else {return}
 		guard let password = registerView?.passwordTextField.text else {return}
 		
@@ -56,7 +60,15 @@ extension RegisterViewController: RegisterViewProtocol{
 			if error != nil {
 				self.alert?.getAlert(titulo: "Atenção", mensagem: "\(String(describing: error))")
 			} else {
-				print("\(email) Cadastrado")
+				if let idUsuario = result?.user.uid{
+					self.firestore?.collection("usuarios").document(idUsuario).setData([
+						"nome": name,
+						"email": email,
+						"id": idUsuario
+					])
+				}
+				
+				
 				self.alert?.getAlert(titulo: "Parabéns", mensagem: "Usuário cadastrado com sucesso", completion: {
 					self.navigationController?.popViewController(animated: true)
 				})
