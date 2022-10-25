@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Menssage {
+class Message {
 	
 	var texto: String?
 	var idUsuario:String?
