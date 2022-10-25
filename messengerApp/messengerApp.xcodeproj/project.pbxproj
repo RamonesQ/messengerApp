@@ -17,7 +17,12 @@
 		D2240F75290721F700796B6D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F6B290721F600796B6D /* RegisterView.swift */; };
 		D2240F76290721F700796B6D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F6D290721F600796B6D /* Alert.swift */; };
 		D2240F77290721F700796B6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F70290721F600796B6D /* LoginViewController.swift */; };
-		D2240F7C290729D600796B6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2240F7B290729D600796B6D /* GoogleService-Info.plist */; };
+		D274DC0B29081A09004278B4 /* send.wav in Resources */ = {isa = PBXBuildFile; fileRef = D274DC0A29081A09004278B4 /* send.wav */; };
+		D274DC1329081B0F004278B4 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1229081B0F004278B4 /* Extension+UIView.swift */; };
+		D274DC1529081B1E004278B4 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1429081B1E004278B4 /* Custom.swift */; };
+		D274DC1729081B31004278B4 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1629081B31004278B4 /* Extension+Button.swift */; };
+		D274DC1929081B3E004278B4 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1829081B3E004278B4 /* Extension+String.swift */; };
+		D274DC1B29082426004278B4 /* GoogleService-Info .plist in Resources */ = {isa = PBXBuildFile; fileRef = D274DC1A29082426004278B4 /* GoogleService-Info .plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +40,15 @@
 		D2240F6B290721F600796B6D /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		D2240F6D290721F600796B6D /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		D2240F70290721F600796B6D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D2240F7B290729D600796B6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D274DC0A29081A09004278B4 /* send.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = send.wav; sourceTree = "<group>"; };
+		D274DC0C29081A9C004278B4 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		D274DC0D29081AA4004278B4 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		D274DC0E29081AAB004278B4 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		D274DC1229081B0F004278B4 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		D274DC1429081B1E004278B4 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		D274DC1629081B31004278B4 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
+		D274DC1829081B3E004278B4 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		D274DC1A29082426004278B4 /* GoogleService-Info .plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info .plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +101,7 @@
 		D2240F422907212500796B6D /* messengerApp */ = {
 			isa = PBXGroup;
 			children = (
-				D2240F7B290729D600796B6D /* GoogleService-Info.plist */,
+				D274DC0F29081ACA004278B4 /* Utils */,
 				D2240F6C290721F600796B6D /* Alert */,
 				D2240F6E290721F600796B6D /* Login */,
 				D2240F64290721F600796B6D /* Register */,
@@ -97,6 +110,7 @@
 				D2240F4C2907212700796B6D /* Assets.xcassets */,
 				D2240F4E2907212700796B6D /* LaunchScreen.storyboard */,
 				D2240F512907212700796B6D /* Info.plist */,
+				D274DC1A29082426004278B4 /* GoogleService-Info .plist */,
 			);
 			path = messengerApp;
 			sourceTree = "<group>";
@@ -160,6 +174,37 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D274DC0F29081ACA004278B4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D274DC1129081ADC004278B4 /* Sound */,
+				D274DC1029081AD6004278B4 /* Fonts */,
+				D274DC1229081B0F004278B4 /* Extension+UIView.swift */,
+				D274DC1429081B1E004278B4 /* Custom.swift */,
+				D274DC1629081B31004278B4 /* Extension+Button.swift */,
+				D274DC1829081B3E004278B4 /* Extension+String.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D274DC1029081AD6004278B4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D274DC0D29081AA4004278B4 /* Poppins-SemiBold.ttf */,
+				D274DC0E29081AAB004278B4 /* Poppins-Bold.ttf */,
+				D274DC0C29081A9C004278B4 /* Poppins-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D274DC1129081ADC004278B4 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				D274DC0A29081A09004278B4 /* send.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,7 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2240F502907212700796B6D /* LaunchScreen.storyboard in Resources */,
-				D2240F7C290729D600796B6D /* GoogleService-Info.plist in Resources */,
+				D274DC1B29082426004278B4 /* GoogleService-Info .plist in Resources */,
+				D274DC0B29081A09004278B4 /* send.wav in Resources */,
 				D2240F4D2907212700796B6D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,9 +322,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2240F76290721F700796B6D /* Alert.swift in Sources */,
+				D274DC1929081B3E004278B4 /* Extension+String.swift in Sources */,
 				D2240F442907212500796B6D /* AppDelegate.swift in Sources */,
+				D274DC1329081B0F004278B4 /* Extension+UIView.swift in Sources */,
 				D2240F73290721F700796B6D /* RegisterViewController.swift in Sources */,
 				D2240F75290721F700796B6D /* RegisterView.swift in Sources */,
+				D274DC1729081B31004278B4 /* Extension+Button.swift in Sources */,
+				D274DC1529081B1E004278B4 /* Custom.swift in Sources */,
 				D2240F72290721F700796B6D /* LoginView.swift in Sources */,
 				D2240F77290721F700796B6D /* LoginViewController.swift in Sources */,
 				D2240F462907212500796B6D /* SceneDelegate.swift in Sources */,
