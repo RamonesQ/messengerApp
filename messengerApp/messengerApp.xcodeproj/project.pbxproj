@@ -22,7 +22,7 @@
 		D274DC1529081B1E004278B4 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1429081B1E004278B4 /* Custom.swift */; };
 		D274DC1729081B31004278B4 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1629081B31004278B4 /* Extension+Button.swift */; };
 		D274DC1929081B3E004278B4 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1829081B3E004278B4 /* Extension+String.swift */; };
-		D274DC1B29082426004278B4 /* GoogleService-Info .plist in Resources */ = {isa = PBXBuildFile; fileRef = D274DC1A29082426004278B4 /* GoogleService-Info .plist */; };
+		D274DC1D2908263D004278B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D274DC1C2908263D004278B4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +48,7 @@
 		D274DC1429081B1E004278B4 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 		D274DC1629081B31004278B4 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
 		D274DC1829081B3E004278B4 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
-		D274DC1A29082426004278B4 /* GoogleService-Info .plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info .plist"; sourceTree = "<group>"; };
+		D274DC1C2908263D004278B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 				D2240F4C2907212700796B6D /* Assets.xcassets */,
 				D2240F4E2907212700796B6D /* LaunchScreen.storyboard */,
 				D2240F512907212700796B6D /* Info.plist */,
-				D274DC1A29082426004278B4 /* GoogleService-Info .plist */,
+				D274DC1C2908263D004278B4 /* GoogleService-Info.plist */,
 			);
 			path = messengerApp;
 			sourceTree = "<group>";
@@ -266,8 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2240F502907212700796B6D /* LaunchScreen.storyboard in Resources */,
-				D274DC1B29082426004278B4 /* GoogleService-Info .plist in Resources */,
 				D274DC0B29081A09004278B4 /* send.wav in Resources */,
+				D274DC1D2908263D004278B4 /* GoogleService-Info.plist in Resources */,
 				D2240F4D2907212700796B6D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

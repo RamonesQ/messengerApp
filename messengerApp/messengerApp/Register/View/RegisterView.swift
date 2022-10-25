@@ -48,6 +48,18 @@ class RegisterView: UIView {
 		textField.textColor = .darkGray
 		return textField
 	}()
+	
+	lazy var nameTextField: UITextField = {
+		let textField = UITextField()
+		textField.translatesAutoresizingMaskIntoConstraints = false
+		textField.autocorrectionType = .no
+		textField.backgroundColor = .white
+		textField.borderStyle = .roundedRect
+		textField.keyboardType = .emailAddress
+		textField.placeholder = "Digite seu nome: "
+		textField.textColor = .darkGray
+		return textField
+	}()
 
 	lazy var passwordTextField: UITextField = {
 		let textField = UITextField()
@@ -94,12 +106,14 @@ class RegisterView: UIView {
 	private func configSuperView(){
 		addSubview(backButton)
 		addSubview(imageAddUser)
+		addSubview(nameTextField)
 		addSubview(emailTextField)
 		addSubview(passwordTextField)
 		addSubview(registerButton)
 	}
 
 	public func configTextFieldDelegate(delegate: UITextFieldDelegate){
+		nameTextField.delegate = delegate
 		emailTextField.delegate = delegate
 		passwordTextField.delegate = delegate
 	}
@@ -112,10 +126,11 @@ class RegisterView: UIView {
 	}
 
 	public func validaTextFields(){
+		guard let name: String = nameTextField.text else {return}
 		guard let email: String = emailTextField.text else {return}
 		guard let password: String = passwordTextField.text else {return}
 
-		if !email.isEmpty && !password.isEmpty{
+		if !name.isEmpty && !email.isEmpty && !password.isEmpty{
 			configButtonEnable(true)
 		} else {
 			configButtonEnable(false)
@@ -141,10 +156,15 @@ class RegisterView: UIView {
 
 			backButton.topAnchor.constraint(equalTo: imageAddUser.topAnchor),
 			backButton.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
+			
+			nameTextField.topAnchor.constraint(equalTo: imageAddUser.bottomAnchor, constant: 40),
+			nameTextField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 30),
+			nameTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -30),
+			nameTextField.heightAnchor.constraint(equalToConstant: 45),
 
-			emailTextField.topAnchor.constraint(equalTo: imageAddUser.bottomAnchor, constant: 40),
-			emailTextField.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 30),
-			emailTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -30),
+			emailTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 15),
+			emailTextField.leadingAnchor.constraint(equalTo: nameTextField.leadingAnchor),
+			emailTextField.trailingAnchor.constraint(equalTo: nameTextField.trailingAnchor),
 			emailTextField.heightAnchor.constraint(equalToConstant: 45),
 
 			passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 15),
