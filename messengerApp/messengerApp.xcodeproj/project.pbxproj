@@ -26,6 +26,10 @@
 		D274DC252908405F004278B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC242908405F004278B4 /* HomeViewController.swift */; };
 		D274DC272908407A004278B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC262908407A004278B4 /* HomeView.swift */; };
 		D274DC2A29084178004278B4 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC2929084178004278B4 /* NavView.swift */; };
+		D274DC2D2908778C004278B4 /* Menssage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC2C2908778C004278B4 /* Menssage.swift */; };
+		D274DC2F29087997004278B4 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC2E29087997004278B4 /* Conversation.swift */; };
+		D274DC31290879A2004278B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC30290879A2004278B4 /* User.swift */; };
+		D274DC33290879C7004278B4 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC32290879C7004278B4 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,10 @@
 		D274DC242908405F004278B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D274DC262908407A004278B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D274DC2929084178004278B4 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		D274DC2C2908778C004278B4 /* Menssage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menssage.swift; sourceTree = "<group>"; };
+		D274DC2E29087997004278B4 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		D274DC30290879A2004278B4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D274DC32290879C7004278B4 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		D2240F422907212500796B6D /* messengerApp */ = {
 			isa = PBXGroup;
 			children = (
+				D274DC2B2908774C004278B4 /* Model */,
 				D274DC0F29081ACA004278B4 /* Utils */,
 				D2240F6C290721F600796B6D /* Alert */,
 				D274DC1E29084003004278B4 /* Home */,
@@ -246,6 +255,17 @@
 			path = NavView;
 			sourceTree = "<group>";
 		};
+		D274DC2B2908774C004278B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D274DC2C2908778C004278B4 /* Menssage.swift */,
+				D274DC2E29087997004278B4 /* Conversation.swift */,
+				D274DC30290879A2004278B4 /* User.swift */,
+				D274DC32290879C7004278B4 /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,7 +387,11 @@
 				D274DC272908407A004278B4 /* HomeView.swift in Sources */,
 				D2240F442907212500796B6D /* AppDelegate.swift in Sources */,
 				D274DC1329081B0F004278B4 /* Extension+UIView.swift in Sources */,
+				D274DC2F29087997004278B4 /* Conversation.swift in Sources */,
+				D274DC2D2908778C004278B4 /* Menssage.swift in Sources */,
+				D274DC33290879C7004278B4 /* Contact.swift in Sources */,
 				D2240F73290721F700796B6D /* RegisterViewController.swift in Sources */,
+				D274DC31290879A2004278B4 /* User.swift in Sources */,
 				D274DC2A29084178004278B4 /* NavView.swift in Sources */,
 				D2240F75290721F700796B6D /* RegisterView.swift in Sources */,
 				D274DC1729081B31004278B4 /* Extension+Button.swift in Sources */,
