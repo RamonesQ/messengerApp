@@ -23,6 +23,9 @@
 		D274DC1729081B31004278B4 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1629081B31004278B4 /* Extension+Button.swift */; };
 		D274DC1929081B3E004278B4 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1829081B3E004278B4 /* Extension+String.swift */; };
 		D274DC1D2908263D004278B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D274DC1C2908263D004278B4 /* GoogleService-Info.plist */; };
+		D274DC252908405F004278B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC242908405F004278B4 /* HomeViewController.swift */; };
+		D274DC272908407A004278B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC262908407A004278B4 /* HomeView.swift */; };
+		D274DC2A29084178004278B4 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC2929084178004278B4 /* NavView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		D274DC1629081B31004278B4 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
 		D274DC1829081B3E004278B4 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		D274DC1C2908263D004278B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D274DC242908405F004278B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D274DC262908407A004278B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D274DC2929084178004278B4 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 			children = (
 				D274DC0F29081ACA004278B4 /* Utils */,
 				D2240F6C290721F600796B6D /* Alert */,
+				D274DC1E29084003004278B4 /* Home */,
 				D2240F6E290721F600796B6D /* Login */,
 				D2240F64290721F600796B6D /* Register */,
 				D2240F432907212500796B6D /* AppDelegate.swift */,
@@ -152,8 +159,8 @@
 		D2240F6E290721F600796B6D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				D2240F78290724CE00796B6D /* View */,
 				D2240F6F290721F600796B6D /* Controller */,
+				D2240F78290724CE00796B6D /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -203,6 +210,40 @@
 				D274DC0A29081A09004278B4 /* send.wav */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		D274DC1E29084003004278B4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D274DC2829084153004278B4 /* NavView */,
+				D274DC2029084015004278B4 /* View */,
+				D274DC1F29084009004278B4 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D274DC1F29084009004278B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D274DC242908405F004278B4 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D274DC2029084015004278B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D274DC262908407A004278B4 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D274DC2829084153004278B4 /* NavView */ = {
+			isa = PBXGroup;
+			children = (
+				D274DC2929084178004278B4 /* NavView.swift */,
+			);
+			path = NavView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,15 +364,18 @@
 			files = (
 				D2240F76290721F700796B6D /* Alert.swift in Sources */,
 				D274DC1929081B3E004278B4 /* Extension+String.swift in Sources */,
+				D274DC272908407A004278B4 /* HomeView.swift in Sources */,
 				D2240F442907212500796B6D /* AppDelegate.swift in Sources */,
 				D274DC1329081B0F004278B4 /* Extension+UIView.swift in Sources */,
 				D2240F73290721F700796B6D /* RegisterViewController.swift in Sources */,
+				D274DC2A29084178004278B4 /* NavView.swift in Sources */,
 				D2240F75290721F700796B6D /* RegisterView.swift in Sources */,
 				D274DC1729081B31004278B4 /* Extension+Button.swift in Sources */,
 				D274DC1529081B1E004278B4 /* Custom.swift in Sources */,
 				D2240F72290721F700796B6D /* LoginView.swift in Sources */,
 				D2240F77290721F700796B6D /* LoginViewController.swift in Sources */,
 				D2240F462907212500796B6D /* SceneDelegate.swift in Sources */,
+				D274DC252908405F004278B4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
