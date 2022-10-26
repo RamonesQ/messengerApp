@@ -14,7 +14,7 @@ class Conversation{
 	var idDestinatario: String?
 	
 	init(dicionario: [String:Any]) {
-		self.nome = dicionario["nome"] as? String
+		self.nome = dicionario["nomeUsuario"] as? String
 		self.ultimaMensagem =  dicionario["ultimaMensagem"] as? String
 		self.idDestinatario =  dicionario["idDestinatario"] as? String
 	}
