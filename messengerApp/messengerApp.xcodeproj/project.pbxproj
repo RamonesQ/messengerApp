@@ -33,6 +33,9 @@
 		D274DC33290879C7004278B4 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC32290879C7004278B4 /* Contact.swift */; };
 		D274DC3729087B3D004278B4 /* LastMessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC3629087B3D004278B4 /* LastMessageCollectionViewCell.swift */; };
 		D274DC3929087EBA004278B4 /* MessageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC3829087EBA004278B4 /* MessageDetailCollectionViewCell.swift */; };
+		D2F0FE14290AA40400B80868 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0FE13290AA40400B80868 /* ChatViewController.swift */; };
+		D2F0FE17290AA45400B80868 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0FE16290AA45400B80868 /* ChatView.swift */; };
+		D2F0FE1A290AA52100B80868 /* ChatNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0FE19290AA52100B80868 /* ChatNavView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		D274DC32290879C7004278B4 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		D274DC3629087B3D004278B4 /* LastMessageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastMessageCollectionViewCell.swift; sourceTree = "<group>"; };
 		D274DC3829087EBA004278B4 /* MessageDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2F0FE13290AA40400B80868 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		D2F0FE16290AA45400B80868 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		D2F0FE19290AA52100B80868 /* ChatNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatNavView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 		D2240F422907212500796B6D /* messengerApp */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0FE11290AA3DF00B80868 /* Chat */,
 				D274DC2B2908774C004278B4 /* Model */,
 				D274DC0F29081ACA004278B4 /* Utils */,
 				D2240F6C290721F600796B6D /* Alert */,
@@ -283,6 +290,40 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		D2F0FE11290AA3DF00B80868 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				D2F0FE18290AA50800B80868 /* NavView */,
+				D2F0FE15290AA43F00B80868 /* View */,
+				D2F0FE12290AA3F100B80868 /* Controller */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		D2F0FE12290AA3F100B80868 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2F0FE13290AA40400B80868 /* ChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2F0FE15290AA43F00B80868 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2F0FE16290AA45400B80868 /* ChatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2F0FE18290AA50800B80868 /* NavView */ = {
+			isa = PBXGroup;
+			children = (
+				D2F0FE19290AA52100B80868 /* ChatNavView.swift */,
+			);
+			path = NavView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,6 +442,8 @@
 			files = (
 				D2240F76290721F700796B6D /* Alert.swift in Sources */,
 				D274DC1929081B3E004278B4 /* Extension+String.swift in Sources */,
+				D2F0FE17290AA45400B80868 /* ChatView.swift in Sources */,
+				D2F0FE14290AA40400B80868 /* ChatViewController.swift in Sources */,
 				D274DC272908407A004278B4 /* HomeView.swift in Sources */,
 				D2240F442907212500796B6D /* AppDelegate.swift in Sources */,
 				D274DC1329081B0F004278B4 /* Extension+UIView.swift in Sources */,
@@ -417,6 +460,7 @@
 				D274DC1529081B1E004278B4 /* Custom.swift in Sources */,
 				D2240F72290721F700796B6D /* LoginView.swift in Sources */,
 				D2240F77290721F700796B6D /* LoginViewController.swift in Sources */,
+				D2F0FE1A290AA52100B80868 /* ChatNavView.swift in Sources */,
 				D2240F462907212500796B6D /* SceneDelegate.swift in Sources */,
 				D274DC3729087B3D004278B4 /* LastMessageCollectionViewCell.swift in Sources */,
 				D274DC252908405F004278B4 /* HomeViewController.swift in Sources */,
