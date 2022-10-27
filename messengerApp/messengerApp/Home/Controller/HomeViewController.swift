@@ -167,13 +167,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension HomeViewController: NavViewProtocol{
 	
-	func typeScreenMessage(type: TypeChatOrContact) {
+	func typeScreenMessage(type: TypeConversationOrContact) {
 		switch type {
 		case .contact:
 			self.screenContact = true
 			self.getContato()
 			self.conversasListener?.remove()
-		case .chat:
+		case .conversation:
 			self.screenContact = false
 			self.addListenerRecuperarConversa()
 			self.homeView?.reloadCollectionView()

@@ -7,13 +7,13 @@
 
 import UIKit
 
-enum TypeChatOrContact{
-	case chat
+enum TypeConversationOrContact{
+	case conversation
 	case contact
 }
 
 protocol NavViewProtocol: AnyObject{
-	func typeScreenMessage(type: TypeChatOrContact)
+	func typeScreenMessage(type: TypeConversationOrContact)
 }
 
 class NavView: UIView {
@@ -80,12 +80,12 @@ class NavView: UIView {
 		return stackV
 	}()
 	
-	lazy var chatBtn: UIButton = {
+	lazy var conversationBtn: UIButton = {
 		let button = UIButton()
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(UIImage(systemName: "message")?.withRenderingMode(.alwaysTemplate), for: .normal)
 		button.tintColor = .black
-		button.addTarget(self, action: #selector(self.tappedChatBtn), for: .touchUpInside)
+		button.addTarget(self, action: #selector(self.tappedConversationBtn), for: .touchUpInside)
 		return button
 	}()
 	
@@ -98,15 +98,15 @@ class NavView: UIView {
 		return button
 	}()
 	
-	@objc func tappedChatBtn(){
-		self.delegate?.typeScreenMessage(type: .chat)
-		chatBtn.tintColor = .systemPink
+	@objc func tappedConversationBtn(){
+		self.delegate?.typeScreenMessage(type: .conversation)
+		conversationBtn.tintColor = .systemPink
 		contactBtn.tintColor = .black
 	}
 	
 	@objc func tappedContactBtn(){
 		self.delegate?.typeScreenMessage(type: .contact)
-		chatBtn.tintColor = .black
+		conversationBtn.tintColor = .black
 		contactBtn.tintColor = .systemPink
 	}
 
@@ -123,7 +123,7 @@ class NavView: UIView {
 		navBar.addSubview(stackView)
 		searchBar.addSubview(searchLabel)
 		searchBar.addSubview(searchBtn)
-		stackView.addArrangedSubview(chatBtn)
+		stackView.addArrangedSubview(conversationBtn)
 		stackView.addArrangedSubview(contactBtn)
 	}
 	
