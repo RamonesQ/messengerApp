@@ -36,6 +36,8 @@
 		D2F0FE14290AA40400B80868 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0FE13290AA40400B80868 /* ChatViewController.swift */; };
 		D2F0FE17290AA45400B80868 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0FE16290AA45400B80868 /* ChatView.swift */; };
 		D2F0FE1A290AA52100B80868 /* ChatNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0FE19290AA52100B80868 /* ChatNavView.swift */; };
+		D2F0FE1D290AE4BA00B80868 /* IncomingTextMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0FE1C290AE4BA00B80868 /* IncomingTextMessageTableViewCell.swift */; };
+		D2F0FE1F290AE8A500B80868 /* OutgoingTextMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0FE1E290AE8A500B80868 /* OutgoingTextMessageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		D2F0FE13290AA40400B80868 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D2F0FE16290AA45400B80868 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		D2F0FE19290AA52100B80868 /* ChatNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatNavView.swift; sourceTree = "<group>"; };
+		D2F0FE1C290AE4BA00B80868 /* IncomingTextMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingTextMessageTableViewCell.swift; sourceTree = "<group>"; };
+		D2F0FE1E290AE8A500B80868 /* OutgoingTextMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingTextMessageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +297,7 @@
 		D2F0FE11290AA3DF00B80868 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0FE1B290AE48B00B80868 /* Cell */,
 				D2F0FE18290AA50800B80868 /* NavView */,
 				D2F0FE15290AA43F00B80868 /* View */,
 				D2F0FE12290AA3F100B80868 /* Controller */,
@@ -322,6 +327,15 @@
 				D2F0FE19290AA52100B80868 /* ChatNavView.swift */,
 			);
 			path = NavView;
+			sourceTree = "<group>";
+		};
+		D2F0FE1B290AE48B00B80868 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D2F0FE1E290AE8A500B80868 /* OutgoingTextMessageTableViewCell.swift */,
+				D2F0FE1C290AE4BA00B80868 /* IncomingTextMessageTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,10 +474,12 @@
 				D274DC1529081B1E004278B4 /* Custom.swift in Sources */,
 				D2240F72290721F700796B6D /* LoginView.swift in Sources */,
 				D2240F77290721F700796B6D /* LoginViewController.swift in Sources */,
+				D2F0FE1F290AE8A500B80868 /* OutgoingTextMessageTableViewCell.swift in Sources */,
 				D2F0FE1A290AA52100B80868 /* ChatNavView.swift in Sources */,
 				D2240F462907212500796B6D /* SceneDelegate.swift in Sources */,
 				D274DC3729087B3D004278B4 /* LastMessageCollectionViewCell.swift in Sources */,
 				D274DC252908405F004278B4 /* HomeViewController.swift in Sources */,
+				D2F0FE1D290AE4BA00B80868 /* IncomingTextMessageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -585,7 +601,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

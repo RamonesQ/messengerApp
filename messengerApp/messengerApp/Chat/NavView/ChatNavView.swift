@@ -11,7 +11,7 @@ class ChatNavView: UIView {
 	
 	var controller:ChatViewController?{
 		didSet{
-			self.backBtn.addTarget(controller, action: #selector(ChatViewController.tappedBackBtn), for: .touchUpInside)
+			self.backBtn.addTarget(controller, action: #selector(ChatViewController.tappedBackButton), for: .touchUpInside)
 		}
 	}
 	

@@ -8,7 +8,17 @@
 import UIKit
 import AVFoundation
 
+protocol ChatViewProtocol: AnyObject {
+	func actionPushMessage()
+}
+
 class ChatView: UIView {
+	
+	weak  private var delegate:ChatViewProtocol?
+	
+	public func delegate(delegate: ChatViewProtocol?){
+		self.delegate = delegate
+	}
 	
 	var bottomContraint:NSLayoutConstraint?
 	var player:AVAudioPlayer?
@@ -38,7 +48,7 @@ class ChatView: UIView {
 		let button = UIButton()
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(UIImage(named: "send"), for: .normal)
-		button.backgroundColor = CustomColor.appLight
+		button.backgroundColor = CustomColor.appPink
 		button.layer.cornerRadius = 22.5
 		button.layer.shadowColor = CustomColor.appLight.cgColor
 		button.layer.shadowRadius = 10
@@ -50,6 +60,7 @@ class ChatView: UIView {
 	
 	lazy var inputMessageTextField: UITextField = {
 		let tf = UITextField()
+		tf.delegate = self
 		tf.translatesAutoresizingMaskIntoConstraints = false
 		tf.placeholder = "mensagem"
 		tf.font = UIFont(name: CustomFont.poppinsSemiBold, size: 14)
@@ -60,6 +71,8 @@ class ChatView: UIView {
 	lazy var tableView: UITableView = {
 		let tb = UITableView()
 		tb.translatesAutoresizingMaskIntoConstraints = false
+		tb.register(IncomingTextMessageTableViewCell.self, forCellReuseIdentifier: IncomingTextMessageTableViewCell.identifier)
+		tb.register(OutgoingTextMessageTableViewCell.self, forCellReuseIdentifier: OutgoingTextMessageTableViewCell.identifier)
 		tb.backgroundColor = .clear
 		tb.transform = CGAffineTransform(scaleX: 1, y: 1)
 		tb.separatorStyle = .none
@@ -105,6 +118,29 @@ class ChatView: UIView {
 	
 	@objc func sendBtnPressed(){
 		self.sendBtn.touchAnimation(s: self.sendBtn)
+		self.playSound()
+		self.delegate?.actionPushMessage()
+		self.startPushMessage()
+	}
+	
+	func playSound() {
+		 guard let url = Bundle.main.url(forResource: "send", withExtension: "wav") else { return }
+		 do {
+			  try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+			  try AVAudioSession.sharedInstance().setActive(true)
+			  self.player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+			  guard let player = self.player else { return }
+			  player.play()
+		 } catch let error {
+			  print(error.localizedDescription)
+		 }
+	}
+	
+	public func startPushMessage(){
+		self.inputMessageTextField.text = ""
+		self.sendBtn.isEnabled = false
+		self.sendBtn.layer.opacity = 0.4
+		self.sendBtn.transform = .init(scaleX: 0.8, y: 0.8)
 	}
 	
 	private func configSuperView(){
@@ -128,7 +164,7 @@ class ChatView: UIView {
 		tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
 		tableView.bottomAnchor.constraint(equalTo: messageInputView.topAnchor),
 		
-		messageInputView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
+		messageInputView.bottomAnchor.constraint(equalTo: bottomAnchor),
 		messageInputView.leadingAnchor.constraint(equalTo: leadingAnchor),
 		messageInputView.trailingAnchor.constraint(equalTo: trailingAnchor),
 		messageInputView.heightAnchor.constraint(equalToConstant: 80),
@@ -138,11 +174,10 @@ class ChatView: UIView {
 		messagemBar.heightAnchor.constraint(equalToConstant: 55),
 		messagemBar.centerYAnchor.constraint(equalTo: messageInputView.centerYAnchor),
 		
-		sendBtn.trailingAnchor.constraint(equalTo: messagemBar.trailingAnchor, constant: -15),
-		//sendBtn.heightAnchor.constraint(equalToConstant: 55),
+		sendBtn.trailingAnchor.constraint(equalTo: messagemBar.trailingAnchor),
 		sendBtn.widthAnchor.constraint(equalToConstant: 55),
-		sendBtn.topAnchor.constraint(equalTo: messagemBar.topAnchor, constant: 10),
-		sendBtn.bottomAnchor.constraint(equalTo: messagemBar.bottomAnchor, constant: -10),
+		sendBtn.topAnchor.constraint(equalTo: messagemBar.topAnchor, constant: 1),
+		sendBtn.bottomAnchor.constraint(equalTo: messagemBar.bottomAnchor, constant: -1),
 		
 		inputMessageTextField.leadingAnchor.constraint(equalTo: messagemBar.leadingAnchor, constant: 20),
 		inputMessageTextField.trailingAnchor.constraint(equalTo: sendBtn.leadingAnchor, constant: -5),
