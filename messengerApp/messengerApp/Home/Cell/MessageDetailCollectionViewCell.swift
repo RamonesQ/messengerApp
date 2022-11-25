@@ -61,24 +61,20 @@ class MessageDetailCollectionViewCell: UICollectionViewCell {
   }
 
 	func setupViewConversation(conversation: Conversation){
-		setUserNameAttributtedText(conversation)
+		self.setUserNameAttributedText(conversation)
 	}
 
-	func setUserNameAttributtedText(_ conversation: Conversation){
-		let attributedText = NSMutableAttributedString(string: "\(conversation.nome ?? "")", attributes: [NSAttributedString.Key.font : UIFont(name: CustomFont.poppinsMedium, size: 16) ?? UIFont(), NSAttributedString.Key.foregroundColor:UIColor.darkGray])
-
-		attributedText.append(NSAttributedString(string: "\n\(conversation.ultimaMensagem ?? "")", attributes: [NSAttributedString.Key.font : UIFont(name: CustomFont.poppinsMedium, size: 14) ?? UIFont(), NSAttributedString.Key.foregroundColor:UIColor.lightGray]))
-		// self.userName.attributedText = attributedText
-		self.userName.textColor = UIColor.darkGray
-		self.userName.font = UIFont(name: CustomFont.poppinsMedium, size: 16)
-		self.userName.text = conversation.nome
+	func setUserNameAttributedText(_ conversation:Conversation){
+		 let attributedText = NSMutableAttributedString(string:"\(conversation.nome ?? "")" , attributes:[NSAttributedString.Key.font: UIFont(name:CustomFont.poppinsMedium, size: 16) ?? UIFont(),NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+		 
+		 attributedText.append(NSAttributedString(string: "\n\(conversation.ultimaMensagem ?? "")" , attributes:[NSAttributedString.Key.font: UIFont(name:CustomFont.poppinsMedium, size: 14) ?? UIFont(), NSAttributedString.Key.foregroundColor: UIColor.lightGray]))
+		 
+		 self.userName.attributedText = attributedText
 	}
-
-	func setUserName(userName: String){
-		//let attributedText = NSMutableAttributedString(string: userName, attributes: [NSAttributedString.Key.font : UIFont(name: CustomFont.poppinsMedium, size: 16) ?? UIFont(), NSAttributedString.Key.foregroundColor:UIColor.darkGray])
-		self.userName.textColor = UIColor.darkGray
-		self.userName.font = UIFont(name: CustomFont.poppinsMedium, size: 16)
-		self.userName.text = userName
+	
+	func setUserName(userName:String){
+		 let attributText = NSMutableAttributedString(string: userName, attributes: [NSAttributedString.Key.font : UIFont(name: CustomFont.poppinsMedium, size: 16) ?? UIFont(), NSAttributedString.Key.foregroundColor:UIColor.darkGray])
+		 self.userName.attributedText = attributText
 	}
 
 }

@@ -83,11 +83,8 @@ class ChatViewController: UIViewController {
 		if let nome = self.contato?.nome{
 			self.nomeContato = nome
 		}
-		
-		
 	}
-	
-	
+
 	private func recuperarDadosUsuarioLogado(){
 		let usuarios = self.db?.collection("usuarios").document(self.idUsuarioLogado ?? "")
 		usuarios?.getDocument(completion: { documentSnapshot, error in
@@ -99,8 +96,8 @@ class ChatViewController: UIViewController {
 	}
 	
 	private func configChatView(){
-		self.screen?.configChatNavView(controller: self)
-		self.screen?.configTablewView(delegate: self, dataSource: self)
+		self.screen?.configNavView(controller: self)
+		self.screen?.configTableView(delegate: self, dataSource: self)
 		self.screen?.delegate(delegate: self)
 	}
 	
@@ -117,10 +114,7 @@ class ChatViewController: UIViewController {
 	
 	private func salvarConversa(idRemetente:String,idDestinatario:String,conversa:[String:Any]){
 		db?.collection("conversas").document(idRemetente).collection("ultimas_conversas").document(idDestinatario).setData(conversa)
-		
 	}
-	
-	
 }
 
 extension ChatViewController:UITableViewDelegate,UITableViewDataSource{
@@ -158,8 +152,6 @@ extension ChatViewController:UITableViewDelegate,UITableViewDataSource{
 		let estimateHeight = desc.heightWithConstrainedWidth(width: 220, font: font)
 		return CGFloat(65 + estimateHeight)
 	}
-	
-	
 }
 
 
@@ -201,5 +193,4 @@ extension ChatViewController:ChatViewProtocol{
 			
 		}
 	}
-	
 }
