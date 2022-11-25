@@ -18,6 +18,9 @@
 		D2240F75290721F700796B6D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F6B290721F600796B6D /* RegisterView.swift */; };
 		D2240F76290721F700796B6D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F6D290721F600796B6D /* Alert.swift */; };
 		D2240F77290721F700796B6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240F70290721F600796B6D /* LoginViewController.swift */; };
+		D22E04F42930FFE600569424 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D274DC0D29081AA4004278B4 /* Poppins-SemiBold.ttf */; };
+		D22E04F52930FFE800569424 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D274DC0E29081AAB004278B4 /* Poppins-Bold.ttf */; };
+		D22E04F62930FFEB00569424 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D274DC0C29081A9C004278B4 /* Poppins-Medium.ttf */; };
 		D274DC0B29081A09004278B4 /* send.wav in Resources */ = {isa = PBXBuildFile; fileRef = D274DC0A29081A09004278B4 /* send.wav */; };
 		D274DC1329081B0F004278B4 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1229081B0F004278B4 /* Extension+UIView.swift */; };
 		D274DC1529081B1E004278B4 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274DC1429081B1E004278B4 /* Custom.swift */; };
@@ -398,6 +401,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22E04F42930FFE600569424 /* Poppins-SemiBold.ttf in Resources */,
+				D22E04F62930FFEB00569424 /* Poppins-Medium.ttf in Resources */,
+				D22E04F52930FFE800569424 /* Poppins-Bold.ttf in Resources */,
 				D2240F502907212700796B6D /* LaunchScreen.storyboard in Resources */,
 				D274DC0B29081A09004278B4 /* send.wav in Resources */,
 				D274DC1D2908263D004278B4 /* GoogleService-Info.plist in Resources */,
